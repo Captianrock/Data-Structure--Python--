@@ -1,0 +1,11 @@
+>>> import sys; print('%s %s' % (sys.executable or sys.platform, sys.version))
+PyDev console: using default backend (IPython not available).
+Warning: No UI framework found to integrate event loop (supported: Qt, Gtk)
+C:\Python27\python.exe 2.7.5 (default, May 15 2013, 22:44:16) [MSC v.1500 64 bit (AMD64)]
+>>> from kevinbacon import BaconFinder
+>>> hi = BaconFinder("f2e4d16a67dd9d2154b9b2a6e311d8ab")
+>>> hi.find("Nicole Kidman")
+>>> hi.find("Tom Cruise")
+"['Tom Cruise', 'Kevin Bacon'] Kevin Bacon number of 1"
+>>> hi.find("Julia Stiles")
+"['Julia Stiles', 'Ellen Barkin', 'Kevin Bacon'] Kevin Bacon number of 2"
